@@ -3,30 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-  
+    <title>Document</title>
+    <style>
+        /*CSS - Cascading Stylesheet */
+        /*eto pang ID */
+        /*#txtUsername {
+            color: red
+            font-size: large;
+        }*/
+        /* Eto pang class */
+        .redText {
+            color:rgb(25, 25, 71);
+            font-size: large;
+            background-color: blue;
+        }
+        #buttonLogin {
+            color: red;
+        }
+        #buttonLogin:hover {
+            cursor: pointer;
+            background-color:blue;
+            font-size: large;
+        }
+        input{
+            margin: 1rem;
+        }
+    </style>
+    
 </head>
 <body>
-    <div style="text-align: center ;">
-    <h1>Login</h1>
-    <input type="text" placeholder="Username">
-    <input type="text" placeholder="Password">
-    <div style="margin-top: 1rem;">
-        <button id="buttonLogin" onclick=>Login</button>
+    <div style="text-align: center;">
+        <h1>Login</h1>
+        <input type="text" placeholder="Username" style="color: blue; font-size: large;">
+        <input type="text" placeholder="Password" style="color: blue; font-size: large;">
+        <div style="margin-top: 1rem;">
+            <button id= "buttonLogin" onclick="alert('Login has been Click')">Login</button>
+
+        </div>
 
     </div>
-    </div>
 
-</body>
-<script>
-    // Javascript
-    console.log("Hello World");
-    //Declaring variable
-    // let / var
-    let btnLogin = document.querySelector("#buttonLogin");
-    btnLogin.onclick = function () {
-        alert('Login has been clicked.')
-    };
+    <script>
+        alert("hellow")
+        let bntLogin = document.querySelector("buttonLogin")
+        bntLogin.onclick = function (){
+            alert('Login has been click')
+        };
     </script>
-
-</html>
+</body>
