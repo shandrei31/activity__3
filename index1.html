@@ -1,62 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <style>
-        /* Pang id */
-        #DivContainer {
-            text-align: center;
-        }
-
-        /* Pang class name */
-        .redText {
-            color: purple;
-            background-color: white;
-        }
-
-        .redText:hover {
-            color: purple;
-        }
-
-        /* input {
-            text-align: right;
-        } */
-
-        #btnlogin {
+        /*CSS - Cascading Stylesheet */
+        /*eto pang ID */
+        /*#txtUsername {
+            color: red
             font-size: large;
-            color: blueviolet;
+        }*/
+        /* Eto pang class */
+        .redText {
+            color:rgb(25, 25, 71);
+            font-size: large;
+            background-color: blue;
         }
-
-        #btnlogin:hover {
+        #buttonLogin {
+            color: red;
+        }
+        #buttonLogin:hover {
             cursor: pointer;
-            font-size: x-large;
-            color: palevioletred;
+            background-color:blue;
+            font-size: large;
+        }
+        input{
+            margin: 1rem;
         }
     </style>
-
-    <title><Button</title>
+    
 </head>
-
 <body>
-    <div style="text-align: center;" id="divContainer">
-        <marquee>
+    <div style="text-align: center;">
         <h1>Login</h1>
-        </marquee>
-        <input type="text" placeholder="Username" id="txtuser" class="redText">
-        <input type="text" placeholder="Password" id="txtpass" class="redText">
+        <input type="text" placeholder="Username" style="color: blue; font-size: large;">
+        <input type="text" placeholder="Password" style="color: blue; font-size: large;">
         <div style="margin-top: 1rem;">
-            <button id="btnlogin">Login</button>
+            <button id= "buttonLogin" onclick="alert('Login has been Click')">Login</button>
+
         </div>
+
     </div>
+
+    <script>
+        alert("hellow")
+        let bntLogin = document.querySelector("buttonLogin")
+        bntLogin.onclick = function (){
+            alert('Login has been click')
+        };
+    </script>
 </body>
-<script>
-    console.log("Hello World");
-
-    let buttonLogin = document.querySelector('#btnlogin');
-    buttonLogin.onclick = function () {
-        alert("Login Succesful!")
-    };
-</script>
-
-</html>
